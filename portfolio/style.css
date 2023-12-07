@@ -1,101 +1,83 @@
-@import url('https://fonts.cdnfonts.com/css/sudo-var');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/hfmonorita');
 
 :root {
   --dark-grey: #202426;
   --dark-green: #6C733D;
   --green: #9DA65D;
   --grey: #8C8C88;
-  --white: #F2F2F2;
+  --white: #f5f5f5;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--dark-grey);
-  font-family: 'Sudo Var', sans-serif;
-}
-
-#navbar {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 50px;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: var(--white);
-  font-size: 25px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: transform 0.3s ease;
-}
-
-#navbar .logo {
-  font-weight: 500;
-}
-
-.menu-icon {
-  display: block;
-  cursor: pointer;
-}
-
-.icon-bar {
-  width: 30px;
-  height: 3px;
   background-color: var(--white);
-  margin: 6px 0;
-  transition: 0.4s;
+  font-family: 'HFMonorita ', sans-serif;
 }
 
-#navbar .links {
+nav{
+  width: 100%;
+  display:block;
+  justify-content: center;
+  background: var(--white);
+}
+
+.nav-bar {
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  justify-content:center;
+  align-items: center;
 }
 
-#navbar .links a {
-  margin-left: 20px;
-  font-weight: 400;
+nav li{
+  display:inline;
+  padding-right: 80px;
 }
 
-#navbar a:hover {
+nav a{
+  text-decoration:none;
+  color:var(--dark-grey);
+  font-size: 18px;
+}
+
+#main {
+  margin: 100px 0px 0px 200px;
+  display: block;
+}
+
+#main h1 {
+  font-family: 'HFMonorita Bold', sans-serif;
+  font-size: 70px;
+  color: #202426;
+  margin-bottom: -20px;
+}
+
+#main p {
+  font-size: 30px;
+  color: #6b6b6b;
+  margin-bottom: 50px;
+}
+
+.main-button {
+  width: 110px;
+  display: block;
+  color: #6b6b6b;
+  padding: 0px 10px 5px 2px;
+  font-size: 18px;
+  transition: transform 0.5s ease;
+}
+
+.main-button:hover {
   transform: translateY(-3px);
-  color: var(--dark-green);
+  cursor: pointer;
+  border-bottom: 2px solid #6b6b6b;
 }
 
-#drop-down-menu {
-  position: absolute;
-  left: -1000;
-}
-
-
-#menu-toggle { /*Checkbox*/
-  display: none;
-}
-
-#menu-toggle:checked + #navbar .links {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 80px;
-  right: 0;
-  background-color: var(--dark-grey);
-  width: 100%;
-  text-align: center;
-}
-
-#menu-toggle:checked + #navbar .links a {
-  margin: 0;
-  padding: 15px;
-  width: 100%;
-}
-
-@media screen and (max-width: 600px) {
-
-
+@media only screen and (max-width: 700px) {
+  .nav-bar {
+    display: none;
+  }
 
 }
