@@ -1,0 +1,101 @@
+@import url('https://fonts.cdnfonts.com/css/sudo-var');
+
+:root {
+  --dark-grey: #202426;
+  --dark-green: #6C733D;
+  --green: #9DA65D;
+  --grey: #8C8C88;
+  --white: #F2F2F2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--dark-grey);
+  font-family: 'Sudo Var', sans-serif;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: var(--white);
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.3s ease;
+}
+
+#navbar .logo {
+  font-weight: 500;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+}
+
+.icon-bar {
+  width: 30px;
+  height: 3px;
+  background-color: var(--white);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+#navbar .links {
+  display: flex;
+  flex-direction: row;
+}
+
+#navbar .links a {
+  margin-left: 20px;
+  font-weight: 400;
+}
+
+#navbar a:hover {
+  transform: translateY(-3px);
+  color: var(--dark-green);
+}
+
+#drop-down-menu {
+  position: absolute;
+  left: -1000;
+}
+
+
+#menu-toggle { /*Checkbox*/
+  display: none;
+}
+
+#menu-toggle:checked + #navbar .links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background-color: var(--dark-grey);
+  width: 100%;
+  text-align: center;
+}
+
+#menu-toggle:checked + #navbar .links a {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+
+
+
+}
