@@ -14,66 +14,125 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: var(--white);
-  font-family: 'HFMonorita ', sans-serif;
+  font-family: 'HFMonorita', sans-serif;
 }
 
+h1 {
+  font-family: 'HFMonorita Bold', sans-serif;
+  font-size: 70px;
+  color: var(--white);
+}
+
+/*NAV BAR*/
 nav{
   width: 100%;
-  display:block;
-  justify-content: center;
   background: var(--white);
 }
 
-.nav-bar {
-  width: 100%;
+nav ul {
   display: flex;
-  justify-content:center;
+  height: 10vh;
+  justify-content: center;
   align-items: center;
-}
-
-nav li{
-  display:inline;
-  padding-right: 80px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav a{
   text-decoration:none;
+  margin-right: 100px;
   color:var(--dark-grey);
   font-size: 18px;
-}
-
-#main {
-  margin: 100px 0px 0px 200px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
   display: block;
-}
-
-#main h1 {
-  font-family: 'HFMonorita Bold', sans-serif;
-  font-size: 70px;
-  color: #202426;
-  margin-bottom: -20px;
-}
-
-#main p {
-  font-size: 30px;
-  color: #6b6b6b;
-  margin-bottom: 50px;
-}
-
-.main-button {
-  width: 110px;
-  display: block;
-  color: #6b6b6b;
-  padding: 0px 10px 5px 2px;
-  font-size: 18px;
   transition: transform 0.5s ease;
 }
-
-.main-button:hover {
-  transform: translateY(-3px);
+nav a:hover {
+  transform: translateY(-5px);
   cursor: pointer;
   border-bottom: 2px solid #6b6b6b;
 }
+
+/*HEADER*/
+#main {
+  display: flex;
+  height: 85vh;
+  align-items: center;
+  background-color: var(--green);
+}
+
+.container {
+  padding-bottom: 190px;
+  margin: 0px auto;
+  width: 980px;
+}
+
+.container h1 {
+  font-size: 70px;
+  color: var(--white);
+  margin-bottom: -20px;
+}
+
+
+.container p {
+  font-size: 25px;
+  color: var(--white);
+  margin-bottom: 50px;
+}
+
+.main-button a{
+  text-decoration:none;
+  width: 210px;
+  display: block;
+  color: var(--white);
+  padding: 0px 10px 5px 2px;
+  font-size: 20px;
+  transition: transform 0.5s ease;
+}
+
+.main-button:hover a{
+  transform: translateY(-3px);
+  cursor: pointer;
+  border-bottom: 1px solid var(--white);
+}
+
+/*ABOUT ME*/
+#about-me {
+  width: 980px;
+  margin: 100px auto;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
+}
+.bio {
+  width: 50%;
+}
+
+.bio h1 {
+  font-size: 50px;
+  color: var(--dark-grey);
+}
+
+.bio p {
+  font-size: 20px;
+  color: var(--grey);
+  line-height: 30px;
+  text-align: justify;
+}
+
+.profile-photo {
+  margin: auto 0;
+  display: block;
+  justify-content: flex-end;
+}
+
+.profile-photo img {
+  width: 40vh;
+  border-radius: 50%;
+}
+
 
 @media only screen and (max-width: 700px) {
   .nav-bar {
