@@ -23,7 +23,7 @@ h1 {
   color: var(--dark-grey);
 }
 
-/*NAV BAR*/
+/*NAVEGAÇÃO*/
 nav{
   width: 100%;
   background: var(--white);
@@ -55,7 +55,7 @@ nav a:hover {
   border-bottom: 2px solid #6b6b6b;
 }
 
-/*HEADER*/
+/*PRICIPAL*/
 #main {
   display: flex;
   height: 85vh;
@@ -98,7 +98,7 @@ nav a:hover {
   border-bottom: 1px solid var(--white);
 }
 
-/*ABOUT ME*/
+/*SOBRE MIM*/
 #about-me {
   width: 980px;
   margin: 100px auto;
@@ -133,7 +133,7 @@ nav a:hover {
   border-radius: 50%;
 }
 
-/*My jorney*/
+/*MINHA JORNADA*/
 #jornada {
   width: 980px;
   margin: 100px auto;
@@ -185,7 +185,7 @@ nav a:hover {
   font-weight: 300;
 }
 
-/*Projects*/
+/*CONTATOS*/
 #contatos {
   width: 980px;
   margin: 100px auto;
