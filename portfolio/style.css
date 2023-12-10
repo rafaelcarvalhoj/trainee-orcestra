@@ -23,6 +23,11 @@ h1 {
   color: var(--dark-grey);
 }
 
+hr {
+  width: 80%;
+  color: #5b5b5b2b;
+}
+
 /*NAVEGAÇÃO*/
 nav{
   width: 100%;
@@ -77,12 +82,13 @@ nav a:hover {
 
 
 .container-main p {
-  font-size: 25px;
+  font-size: 20px;
   color: var(--white);
-  margin-bottom: 50px;
+  height: 10px;
 }
 
 .main-button a{
+  margin-top: 50px;
   text-decoration:none;
   width: 210px;
   display: block;
@@ -101,8 +107,7 @@ nav a:hover {
 /*SOBRE MIM*/
 #about-me {
   width: 980px;
-  margin: 100px auto;
-  height: 70vh;
+  margin: 100px auto 50px auto;
   display: flex;
   justify-content: space-between;
 }
@@ -136,7 +141,7 @@ nav a:hover {
 /*MINHA JORNADA*/
 #jornada {
   width: 980px;
-  margin: 100px auto;
+  margin: 50px auto;
   padding-top: 100px;
   justify-content: space-between;
 }
@@ -182,6 +187,7 @@ nav a:hover {
 .container-jornada p {
   color: var(--white);
   font-size: 16px;
+  line-height: 30px;
   font-weight: 300;
 }
 
